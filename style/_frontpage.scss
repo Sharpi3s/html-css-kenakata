@@ -1,0 +1,129 @@
+.zigzag {
+  width: 15rem;
+}
+
+.card-menu {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: space-between;
+  height: 210px;
+  background-color: #fff;
+  padding: 1.4rem 0.6rem;
+  border-radius: 30px;
+  margin-top: 45px;
+  position: relative;
+}
+.bullet-red {
+  background-color: $bullet-red;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.bullet-green {
+  background-color: $bullet-green;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.box-icon {
+  position: relative;
+  &:hover {
+    .infobox{
+      opacity: 1;
+    }
+    .icon-gray {
+      color: $primary;
+    }
+  }
+}
+.infobox {
+  padding: 0rem 0.6rem;
+  border-radius: 2px;
+  right: 40px;
+  // min-width: 100px;
+  white-space: nowrap;
+  background-color: $primary;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.6s linear;
+}
+.triangle {
+  height: 8px;
+  width: 8px;
+  top: 8px;
+  transform: rotate(45deg);
+  background-color: $primary;
+  position: absolute;
+  right: -4px;
+  z-index: 0;
+}
+
+.img-box-top-seller {
+  // background-color: #ccc;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  .blue-box-top-seller {
+    background-color: $background-dark;
+    height: 112%;
+    width: 100%;
+    position: absolute;
+    // bottom: 0;
+    bottom: -105%;
+    padding: 1rem 1.5rem;
+    transition: all 0.6s linear;
+    color: #fff !important;
+  }
+  .text-blue-box-top {
+    position: absolute;
+    top: 10px;
+  }
+  &:hover {
+    .blue-box-top-seller {
+      bottom: 0;
+      background-color: $overlay;
+    }
+  }
+}
+.card-menu-top-seller {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: space-between;
+  height: 210px;
+  background-color: #fff;
+  padding: 1.4rem 0.6rem;
+  border-radius: 30px;
+  margin-top: 80px;
+  position: relative;
+}
+
+.subscribe-box {
+  background-color: #f6f6f6;
+}
+.subscribe-img {
+  background-image: url(../images/assets/subscribe.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.input-group-custom {
+  position: relative;
+  input {
+    height: 44px;
+    padding-right: 100px;
+  }
+  button {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    height: 38px;
+  }
+}

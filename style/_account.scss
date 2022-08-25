@@ -1,0 +1,73 @@
+.bg-account {
+  background-color: $background-my-account;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.login {
+  background-color: $background-light3;
+  border-radius: 8px;
+  padding: 2rem;
+
+  .login-block {
+    p {
+      white-space: nowrap;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    hr {
+      display: block;
+      width: 100%;
+      margin-top: 0;
+      margin: auto;
+      color: #6e6e6e;
+      height: 2px;
+    }
+  }
+  .facebook {
+    background-color: #3B5998;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+    transition: all 0.3s linear;
+    .facebook-icon {
+      position: absolute;
+      height: 25px;
+      left: 10px;
+      top: 10px;
+    }
+    &:hover {
+      box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.459);
+      cursor: pointer;
+    }
+  }
+  .google {
+    background-color: #4285F4;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+    transition: all 0.3s linear;
+    .google-icon {
+      position: absolute;
+      height: 25px;
+      left: 10px;
+      top: 10px;
+    }
+    &:hover {
+      box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.363);
+      cursor: pointer;
+    }
+  }
+}
+
+.register {
+  background-color: $background-light3;
+  border-radius: 8px;
+  padding: 2rem;
+}

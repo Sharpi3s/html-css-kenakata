@@ -1,0 +1,120 @@
+.banner-bg {
+  background: linear-gradient(to right, rgba(63, 63, 63, 0.603), rgba(153, 153, 153, 0.26)), url(../images/assets/banner-customer.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+.new-customer-box {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-text-box {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.sale-box-root {
+  height: 400px;
+}
+.sale-box {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-margin {
+  margin-top: -1rem;
+}
+.banner-sale-box {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.circle-white {
+  background-color: #fff;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  outline: 2px dashed $primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .circle-white {
+    background-color: #fff;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    outline: 2px dashed $primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner-bg {
+    background: linear-gradient(to right, rgba(63, 63, 63, 0.404), rgba(204, 204, 204, 0)), url(../images/assets/banner-customer.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+  }
+  .new-customer-box {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-text-box {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .sale-box-root {
+    height: 400px;
+  }
+  .sale-box {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-margin {
+    margin-top: -1rem;
+  }
+  .banner-sale-box {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle-white {
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    outline: 2px dashed $primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

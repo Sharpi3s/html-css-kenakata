@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo/kenakata-iconic-mark.svg" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/eed1b45fc1.js" crossorigin="anonymous"></script>
+    <!-- Style-file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Title -->
+    <title>Kenakata</title>
+</head>
+<body>
+  <div id="root">
+    <!-- Navigation start -->
+    <nav id="navigation" class="navbar navbar-expand-lg navbar-dark bg-primary-teal">
+      <div class="container">
+          <!-- Top menu -->
+          <ul class="navbar-nav me-3">
+            <li class="nav-item dropdown">
+              <a class="nav-link ps-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ENG <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-light">
+                <li><a class="dropdown-item text-dark" href="#">Action</a></li>
+                <li><a class="dropdown-item text-dark" href="#">Another action</a></li>
+                <li><a class="dropdown-item text-dark" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                EUR <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-light">
+                <li><a class="dropdown-item text-dark" href="#">Action</a></li>
+                <li><a class="dropdown-item text-dark" href="#">Another action</a></li>
+                <li><a class="dropdown-item text-dark" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        <!-- Hamburger menu on mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Top Menu collapse -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <div class="navbar-nav ms-auto">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Newsletter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Conatct us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQs</a>
+              </li>
+            </ul>
+            <!-- Icons -->
+            <ul class="navbar-nav d-flex flex-row ms-0 ms-lg-3">
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link icon-hover" href="#"><i class="fa-brands fa-facebook-f text-white"></i></a>
+              </li>
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link icon-hover" href="#"><i class="fa-brands fa-twitter text-white"></i></a>
+              </li>
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link icon-hover" href="#"><i class="fa-brands fa-instagram text-white"></i></a>
+              </li>
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link icon-hover" href="#"><i class="fa-brands fa-pinterest-p text-white"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link icon-hover" href="#"><i class="fa-brands fa-youtube text-white"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation end -->
+
+    <!-- Section Header start-->
+    <section id="header">
+      <div class="container">
+        <div class="row my-3">
+          <div class="col-4 col-lg-3 d-flex align-items-center">
+            <img class="logo" src="./images/logo/kenakata-logo.svg" alt="">
+          </div>
+          <div class="col-8 col-lg-5 d-flex align-items-center">
+            <div class="input-group">
+              <input type="text" class="form-control border-radius" placeholder="Search products..." aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-prime border-radius" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass text-white"></i></button>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2 d-flex align-items-center mt-4 mt-lg-0">
+            <a href="html/myAccount.html"><i class="fa-regular fa-user fa-lg me-2"></i> My account</a>
+          </div>
+          <div class="col-6 col-lg-2 d-flex align-items-center justify-content-between mt-4 mt-lg-0 ps-lg-5">
+            <i class="fa-regular fa-heart fa-lg"></i>
+            <div class="position-relative">
+              <i class="fa-solid fa-shuffle fa-lg"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary-teal">
+                0
+                <span class="visually-hidden">Emphty</span>
+              </span>
+            </div>
+            <div class="d-flex ">
+              <div class="position-relative">
+                <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary-teal">
+                  0
+                  <span class="visually-hidden">Emphty</span>
+                </span>
+              </div>
+              <p class="mb-0 ms-2">€0.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="dropdown">
+          <button class="btn text-white border-radius-none btn-prime fw-bold btn-sm-font" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-bars text-white me-1 py-2"></i> Browse Categories <i class="fa-solid fa-angle-down text-white ms-4"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <button class="btn btn-prime text-white border-radius fw-bold px-4 btn-sm-font">SPECIAL OFFER</button>
+      </div>
+    </section>
+    <!-- Section Header end-->
+
+    <!-- Hero Image + text start-->
+    <section id="hero-image">
+      <div class="container d-flex align-items-center h-100">
+        <div class="row">
+          <div class="col-7">
+            <h1 class="font-play mb-1">Shopping is</h1>
+            <h1 class="font-play-bold color-primary-teal mb-4">MORE FUN</h1>
+            <p class="mb-4">Vivamus dignissim a ex eu ornare. Ut fermentum orci vel diam ultricies faucibus. Quisque quis erat sed</p>
+            <button class="btn color-primary-teal border-radius fw-bold btn-light-prime">SHOP NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Image + text end -->
+
+    <!-- Section primary cards start -->
+    <section id="info" class="p-3 p-lg-5">
+
+      <div class="row p-2 p-lg-3">
+        <!-- Free shipping card start -->
+        <div class="col-12 col-md-6 col-lg-3 p-1 p-lg-3">
+          <div class="bg-teal-card">
+              <div class="row">
+                <div class="col-2 d-flex align-items-center">
+                  <img class="icon" src="./images/icons/icon-shipping.svg" alt="">
+                </div>
+                <div class="col-10 d-flex flex-column justify-content-center ps-3">
+                  <h6 class="h6-card mb-1">Free shipping</h6>
+                  <p class="mb-0 icon-text">For a local customer, we provide free shipping facility</p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- Free shipping card end -->
+        <!-- Free 24/7 support card start -->
+        <div class="col-12 col-md-6 col-lg-3 p-1 p-lg-3">
+          <div class="bg-teal-card">
+              <div class="row">
+                <div class="col-2 d-flex align-items-center">
+                  <img class="icon" src="./images/icons/icon-support.svg" alt="">
+                </div>
+                <div class="col-10 d-flex flex-column justify-content-center ps-3">
+                  <h6 class="h6-card mb-1">24/7 support</h6>
+                  <p class="mb-0 icon-text">For any inquiry, we are available 24 hours every day</p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- Free 24/7 support card end -->
+        <!-- Free Online payment card start -->
+        <div class="col-12 col-md-6 col-lg-3 p-1 p-lg-3">
+          <div class="bg-teal-card">
+              <div class="row">
+                <div class="col-2 d-flex align-items-center">
+                  <img class="icon" src="./images/icons/icon-payment.svg" alt="">
+                </div>
+                <div class="col-10 d-flex flex-column justify-content-center ps-3">
+                  <h6 class="h6-card mb-1">Online payment</h6>
+                  <p class="mb-0 icon-text">You can pay quickly and easily with our online payment system</p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- Free Online payment card end -->
+        <!-- Free Fast delivery card start -->
+        <div class="col-12 col-md-6 col-lg-3 p-1 p-lg-3">
+          <div class="bg-teal-card">
+              <div class="row">
+                <div class="col-2 d-flex align-items-center">
+                  <img class="icon" src="./images/icons/icon-delivery.svg" alt="">
+                </div>
+                <div class="col-10 d-flex flex-column justify-content-center ps-3">
+                  <h6 class="h6-card mb-1">Fast delivery</h6>
+                  <p class="mb-0 icon-text">We understand your urgency and we deliver in a fast way</p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- Free Fast delivery card end -->
+      </div>
+    </section>
+    <!-- Section primary cards end -->
+
+    <!-- Section Category start -->
+    <section id="categories">
+      <div class="container ">
+        <h2 class="font-play-bold text-center">SHOP BY <span class="color-primary-teal">CATEGORY</span></h2>
+        <div class="d-flex justify-content-center">
+          <img class="zigzag mb-3" src="./images/assets/zigzag.svg" alt="">
+        </div>
+        <p class="text-center mb-5">We always try to give you the best product within a fast and reliable way</p>
+
+        <div class="parent mb-5">
+          <div class="item div1">
+            <div class="overlay"></div>
+            <div class="blue-box">
+              <p class="color-primary-teal fw-bold mb-0">Men</p>
+              <small class="text-white mb-0 ">150 products</small>
+            </div>
+          </div>
+          <div class="item div2">
+            <div class="overlay"></div>
+            <div class="blue-box">
+              <p class="color-primary-teal fw-bold mb-1">Woman</p>
+              <small class="text-white mb-0">170 products</small>
+            </div>
+          </div>
+          <div class="item div3">
+            <div class="overlay"></div>
+            <div class="blue-box">
+              <p class="color-primary-teal fw-bold mb-1">Shoes</p>
+              <small class="text-white mb-0">35 products</small>
+            </div>
+          </div>
+          <div class="item div4">
+            <div class="overlay"></div>
+            <div class="blue-box">
+              <p class="color-primary-teal fw-bold mb-1">Hats</p>
+              <small class="text-white mb-0">27 products</small>
+            </div>
+          </div>
+          <div class="item div5">
+            <div class="overlay"></div>
+            <div class="blue-box">
+              <p class="color-primary-teal fw-bold mb-1">Sunglasses</p>
+              <small class="text-white mb-0">18 products</small>
+            </div>
+          </div>
+          <div class="item div6">
+            <div class="overlay"></div>
+            <div class="blue-box">
+              <p class="color-primary-teal fw-bold mb-1">Kids</p>
+              <small class="text-white mb-0">210 products</small>
+            </div>
+          </div>
+          <div class="item div7">
+            <div class="overlay"></div>
+            <div class="blue-box">
+              <p class="color-primary-teal fw-bold mb-1">Watches</p>
+              <small class="text-white mb-0">21 products</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Category end -->
+
+    <!-- Section New Arrivals start -->
+    <section id="new-arrivals" class="py-0 py-lg-5">
+      <div class="container">
+        <h2 class="font-play-bold text-center mt-5">NEW <span class="color-primary-teal">ARRIVALS</span></h2>
+        <div class="d-flex justify-content-center">
+          <img class="zigzag mb-3" src="./images/assets/zigzag.svg" alt="">
+        </div>
+        <p class="text-center mb-5">Check out our latest products from top fashion designers</p>
+        <!-- New Arrival grid start -->
+        <div class="row g-3 g-lg-5 mb-5">
+          <!-- NEW ARRIVALS img 1 -->
+          <div class="col-12 col-lg-4">
+            <div class="img-box-new-arrival new-1">
+              <div class="blue-box-new-arrival d-flex flex-column justify-content-between">
+                <p class="text-white text-blue-box-top">Blue silk flare sleeve top</p>
+                <div class="d-flex justify-content-end">
+                  <div class="card-menu">
+                    <div class="bullet-red"></div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Add to favorites</p></div>
+                      <i class="fa-regular fa-heart fa-lg icon-gray"></i>
+                    </div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Swap</p></div>
+                      <i class="fa-solid fa-shuffle fa-lg icon-gray"></i>
+                    </div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Quick view</p></div>
+                      <i class="fa-solid fa-magnifying-glass fa-lg icon-gray"></i>
+                    </div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Add to cart</p></div>
+                      <i class="fa-solid fa-cart-shopping fa-lg icon-gray"></i>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="text-white">Blue silk flare sleeve top</p>
+                  <small class="text-white border border-white py-1 px-2">Fashion</small>
+                  <div class="mt-3 mb-2"><small class="text-white text-decoration-line-through">€20.00</small></div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h5 class="color-primary-teal fw-bold mb-0">€10.00</h5>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-regular fa-star color-primary-teal"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- NEW ARRIVALS img 2 -->
+          <div class="col-12 col-lg-4">
+            <div class="img-box-new-arrival new-2">
+              <div class="blue-box-new-arrival d-flex flex-column justify-content-between">
+                <p class="text-white text-blue-box-top">New look men's coat</p>
+                <div class="d-flex justify-content-end">
+                  <div class="card-menu">
+                    <div class="bullet-red"></div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Add to favorites</p></div>
+                      <i class="fa-regular fa-heart fa-lg icon-gray"></i>
+                    </div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Swap</p></div>
+                      <i class="fa-solid fa-shuffle fa-lg icon-gray"></i>
+                    </div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Quick view</p></div>
+                      <i class="fa-solid fa-magnifying-glass fa-lg icon-gray"></i>
+                    </div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Add to cart</p></div>
+                      <i class="fa-solid fa-cart-shopping fa-lg icon-gray"></i>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="text-white">New look men's coat</p>
+                  <small class="text-white border border-white py-1 px-2">Fashion</small>
+                  <div class="mt-3 mb-2"><small class="text-white text-decoration-line-through">€50.00</small></div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h5 class="color-primary-teal fw-bold mb-0">€20.00</h5>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-regular fa-star color-primary-teal"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- NEW ARRIVALS img 3 -->
+          <div class="col-12 col-lg-4">
+            <div class="img-box-new-arrival new-3">
+              <div class="blue-box-new-arrival d-flex flex-column justify-content-between">
+                <p class="text-white text-blue-box-top">Pattern girls shirt</p>
+                <div class="d-flex justify-content-end">
+                  <div class="card-menu">
+                    <div class="bullet-red"></div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Add to favorites</p></div>
+                      <i class="fa-regular fa-heart fa-lg icon-gray"></i>
+                    </div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Swap</p></div>
+                      <i class="fa-solid fa-shuffle fa-lg icon-gray"></i>
+                    </div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Quick view</p></div>
+                      <i class="fa-solid fa-magnifying-glass fa-lg icon-gray"></i>
+                    </div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Add to cart</p></div>
+                      <i class="fa-solid fa-cart-shopping fa-lg icon-gray"></i>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="text-white">Pattern girls shirt</p>
+                  <small class="text-white border border-white py-1 px-2">Fashion</small>
+                  <div class="mt-3 mb-2"><small class="text-white text-decoration-line-through">€25.00</small></div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h5 class="color-primary-teal fw-bold mb-0">€12.00</h5>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-regular fa-star color-primary-teal"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- New Arrival grid end-->
+      </div>
+    </section>
+    <!-- Section New Arrivals end -->
+
+    <!-- Section Banner new customer start -->
+    <section id="banner-new-customer">
+      <div class="banner-bg my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-3 bg-primary-teal new-customer-box">
+              <div class="d-flex align-items-end justify-content-center">
+                <h1 class="font-play-bold text-white mb-0 me-3">30% 
+                  <h3 class="font-play text-white fw-bold mb-0 mb-lg-2"> OFF</h3>
+                </h1>
+              </div>
+              <p class="text-center text-white">For new customer</p>
+              <button type="button" class="btn btn-dark-blue border-radius text-white fw-bold py-3 px-5">SHOP NOW</button>
+            </div>
+            <div class="col-lg-2"></div>
+            <div class="col-12 col-lg-5 banner-text-box">
+              <p class="text-white">Donec pulvinar arcu vitae ipsum varius cursus. Nunc iaculis fermentum iaculis. Nunc pulvinar purus at erat lacinia, ut convallis nibh consequat. Integer nulla nisi, aliquam at tellus a, viverra scelerisque purus. Nam pretium iaculis ultrices.</p>
+              <button type="button" class="btn btn-light-prime border-radius color-primary-teal fw-bold py-3 px-5">SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Banner new customer end -->
+
+    <!-- Section Featured Products start-->
+    <section id="featured-products" class="py-0 py-lg-5">
+      <div class="container">
+        <h2 class="font-play-bold text-center mt-5">FEATURED <span class="color-primary-teal">PRODUCTS</span></h2>
+        <div class="d-flex justify-content-center">
+          <img class="zigzag mb-3" src="./images/assets/zigzag.svg" alt="">
+        </div>
+        <p class="text-center mb-5">Check out our monthly featured products from top brands</p>
+
+        <div class="row g-3 g-lg-5 mb-5">
+          <!-- FEATURED PRODUCTS img 1 -->
+          <div class="col-12 col-lg-4">
+            <div class="img-box-new-arrival new-4">
+              <div class="blue-box-new-arrival d-flex flex-column justify-content-between">
+                <p class="text-white text-blue-box-top">Winter collection for women's</p>
+                <div class="d-flex justify-content-end">
+                  <div class="card-menu">
+                    <div class="bullet-red"></div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Add to favorites</p></div>
+                      <i class="fa-regular fa-heart fa-lg icon-gray"></i>
+                    </div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Swap</p></div>
+                      <i class="fa-solid fa-shuffle fa-lg icon-gray"></i>
+                    </div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Quick view</p></div>
+                      <i class="fa-solid fa-magnifying-glass fa-lg icon-gray"></i>
+                    </div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Add to cart</p></div>
+                      <i class="fa-solid fa-cart-shopping fa-lg icon-gray"></i>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="text-white">Winter collection for women's</p>
+                  <small class="text-white border border-white py-1 px-2">Fashion</small>
+                  <div class="mt-3 mb-2"><small class="text-white text-decoration-line-through">€40.00</small></div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h5 class="color-primary-teal fw-bold mb-0">€25.00</h5>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-regular fa-star color-primary-teal"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FEATURED PRODUCTS img 2 -->
+          <div class="col-12 col-lg-4">
+            <div class="img-box-new-arrival new-5">
+              <div class="blue-box-new-arrival d-flex flex-column justify-content-between">
+                <p class="text-white text-blue-box-top">New look men's coat</p>
+                <div class="d-flex justify-content-end">
+                  <div class="card-menu">
+                    <div class="bullet-red"></div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Add to favorites</p></div>
+                      <i class="fa-regular fa-heart fa-lg icon-gray"></i>
+                    </div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Swap</p></div>
+                      <i class="fa-solid fa-shuffle fa-lg icon-gray"></i>
+                    </div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Quick view</p></div>
+                      <i class="fa-solid fa-magnifying-glass fa-lg icon-gray"></i>
+                    </div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Add to cart</p></div>
+                      <i class="fa-solid fa-cart-shopping fa-lg icon-gray"></i>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="text-white">New look men's coat</p>
+                  <small class="text-white border border-white py-1 px-2">Fashion</small>
+                  <div class="mt-3 mb-2"><small class="text-white text-decoration-line-through">€50.00</small></div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h5 class="color-primary-teal fw-bold mb-0">€20.00</h5>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-regular fa-star color-primary-teal"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FEATURED PRODUCTS img 3 -->
+          <div class="col-12 col-lg-4">
+            <div class="img-box-new-arrival new-6">
+              <div class="blue-box-new-arrival d-flex flex-column justify-content-between">
+                <p class="text-white text-blue-box-top">Red women's blazer full</p>
+                <div class="d-flex justify-content-end">
+                  <div class="card-menu">
+                    <div class="bullet-red"></div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Add to favorites</p></div>
+                      <i class="fa-regular fa-heart fa-lg icon-gray"></i>
+                    </div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Swap</p></div>
+                      <i class="fa-solid fa-shuffle fa-lg icon-gray"></i>
+                    </div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Quick view</p></div>
+                      <i class="fa-solid fa-magnifying-glass fa-lg icon-gray"></i>
+                    </div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Add to cart</p></div>
+                      <i class="fa-solid fa-cart-shopping fa-lg icon-gray"></i>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="text-white">Red women's blazer full</p>
+                  <small class="text-white border border-white py-1 px-2">Fashion</small>
+                  <div class="mt-3 mb-2"><small class="text-white text-decoration-line-through">€25.00</small></div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h5 class="color-primary-teal fw-bold mb-0">€12.00</h5>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-regular fa-star color-primary-teal"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End FEATURED PRODUCTS -->
+        </div>
+      </div>
+    </section>
+    <!-- Section Featured Products end-->
+
+    <!-- Section Banner Sale start-->
+    <section id="banner-sale">
+      <div class="bg-dark-blue my-5 sale-box-root">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-3 bg-primary-teal sale-box">
+              <h1 class="font-play-bold text-white mb-1 mb-lg-0">FLASH</h1>
+              <h1 class="font-play-bold text-white text-margin">SALE</h1>
+              <h5 class="text-center text-white fw-bold">UP TO 50% OFF</h5>
+            </div>
+            <div class="col-0 col-lg-3"></div>
+            <div class="col-12 col-lg-6 banner-sale-box">
+              <div class="row g-3 g-lg-5 mb-5">
+                <div class="col-3 col-lg-3 d-flex justify-content-center">
+                  <div class="circle-white">
+                    <h2 class="color-primary-teal fw-bold mb-0">7</h2>
+                    <p class="mb-0">Days</p>
+                  </div>
+                </div>
+                <div class="col-3 col-lg-3 d-flex justify-content-center">
+                  <div class="circle-white">
+                    <h2 class="color-primary-teal fw-bold mb-0">23</h2>
+                    <p class="mb-0">Hours</p>
+                  </div>
+                </div>
+                <div class="col-3 col-lg-3 d-flex justify-content-center">
+                  <div class="circle-white">
+                    <h2 class="color-primary-teal fw-bold mb-0">46</h2>
+                    <p class="mb-0">Minutes</p>
+                  </div>
+                </div>
+                <div class="col-3 col-lg-3 d-flex justify-content-center">
+                  <div class="circle-white">
+                    <h2 class="color-primary-teal fw-bold mb-0">12</h2>
+                    <p class="mb-0">Seconds</p>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-light-prime border-radius color-primary-teal fw-bold py-3 px-5">SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Banner Sale end-->
+
+    <!-- Section Top Seller start-->
+    <section id="top-seller">
+      <div class="container py-0 py-lg-5">
+        <h2 class="font-play-bold text-center mt-5">TOP <span class="color-primary-teal">SELLERS</span></h2>
+        <div class="d-flex justify-content-center">
+          <img class="zigzag mb-3" src="./images/assets/zigzag.svg" alt="">
+        </div>
+        <p class="text-center mb-5">Check out our weekly top sellers in all category</p>
+
+
+        <div class="row">
+          <!-- TOPSELLER img1 -->
+          <div class="col-12 col-lg-6 pe-2">
+            <div class="img-box-top-seller new-7 mb-3 mb-lg-0">
+              <div class="blue-box-top-seller d-flex flex-column justify-content-between">
+                <p class="text-white text-blue-box-top">Men's denim shirts full</p>
+                <div class="d-flex justify-content-end">
+                  <div class="card-menu-top-seller">
+                    <div class="bullet-red"></div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Add to favorites</p></div>
+                      <i class="fa-regular fa-heart fa-lg icon-gray"></i>
+                    </div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Swap</p></div>
+                      <i class="fa-solid fa-shuffle fa-lg icon-gray"></i>
+                    </div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Quick view</p></div>
+                      <i class="fa-solid fa-magnifying-glass fa-lg icon-gray"></i>
+                    </div>
+                    <div class="box-icon">
+                      <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Add to cart</p></div>
+                      <i class="fa-solid fa-cart-shopping fa-lg icon-gray"></i>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="text-white">Men's denim shirts full</p>
+                  <small class="text-white border border-white py-1 px-2">Fashion</small>
+                  <div class="mt-3 mb-2"><small class="text-white text-decoration-line-through">€25.00</small></div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h5 class="color-primary-teal fw-bold mb-0">€12.00</h5>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-solid fa-star color-primary-teal"></i>
+                      <i class="fa-regular fa-star color-primary-teal"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="row">
+              <!-- TOPSELLER img2 -->
+              <div class="col-12 pb-2">
+                <div class="img-box-top-seller-small new-8">
+                  <div class="blue-box-top-seller d-flex flex-column justify-content-between">
+                    <p class="text-white text-blue-box-top">Women's leather bag and shoe</p>
+                    <div class="d-flex justify-content-end">
+                      <div class="card-menu-top-seller-small">
+                        <div class="bullet-red"></div>
+                        <div class="box-icon">
+                          <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Add to favorites</p></div>
+                          <i class="fa-regular fa-heart fa-lg icon-gray"></i>
+                        </div>
+                        <div class="box-icon">
+                          <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Swap</p></div>
+                          <i class="fa-solid fa-shuffle fa-lg icon-gray"></i>
+                        </div>
+                        <div class="box-icon">
+                          <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Quick view</p></div>
+                          <i class="fa-solid fa-magnifying-glass fa-lg icon-gray"></i>
+                        </div>
+                        <div class="box-icon">
+                          <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Add to cart</p></div>
+                          <i class="fa-solid fa-cart-shopping fa-lg icon-gray"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="text-white">Women's leather bag and shoe</p>
+                      <small class="text-white border border-white py-1 px-2">Fashion</small>
+                      <div class="mt-3 mb-2"><small class="text-white text-decoration-line-through">€50.00</small></div>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <h5 class="color-primary-teal fw-bold mb-0">€30.00</h5>
+                        <div class="d-flex align-items-center">
+                          <i class="fa-solid fa-star color-primary-teal"></i>
+                          <i class="fa-solid fa-star color-primary-teal"></i>
+                          <i class="fa-solid fa-star color-primary-teal"></i>
+                          <i class="fa-solid fa-star color-primary-teal"></i>
+                          <i class="fa-regular fa-star color-primary-teal"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- TOPSELLER img3 -->
+              <div class="col-12 pt-2">
+                <div class="img-box-top-seller-small new-9">
+                  <div class="blue-box-top-seller d-flex flex-column justify-content-between">
+                    <p class="text-white text-blue-box-top">New look men's sneakers</p>
+                    <div class="d-flex justify-content-end">
+                      <div class="card-menu-top-seller-small">
+                        <div class="bullet-red"></div>
+                        <div class="box-icon">
+                          <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Add to favorites</p></div>
+                          <i class="fa-regular fa-heart fa-lg icon-gray"></i>
+                        </div>
+                        <div class="box-icon">
+                          <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Swap</p></div>
+                          <i class="fa-solid fa-shuffle fa-lg icon-gray"></i>
+                        </div>
+                        <div class="box-icon">
+                          <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Quick view</p></div>
+                          <i class="fa-solid fa-magnifying-glass fa-lg icon-gray"></i>
+                        </div>
+                        <div class="box-icon">
+                          <div class="infobox"><div class="triangle"></div><p class="text-white mb-0">Add to cart</p></div>
+                          <i class="fa-solid fa-cart-shopping fa-lg icon-gray"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="text-white">New look men's sneakers</p>
+                      <small class="text-white border border-white py-1 px-2">Fashion</small>
+                      <div class="mt-3 mb-2"><small class="text-white text-decoration-line-through">€25.00</small></div>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <h5 class="color-primary-teal fw-bold mb-0">€15.00</h5>
+                        <div class="d-flex align-items-center">
+                          <i class="fa-solid fa-star color-primary-teal"></i>
+                          <i class="fa-solid fa-star color-primary-teal"></i>
+                          <i class="fa-solid fa-star color-primary-teal"></i>
+                          <i class="fa-solid fa-star color-primary-teal"></i>
+                          <i class="fa-regular fa-star color-primary-teal"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Top Seller end -->
+
+    <!-- Section Banner Subscribe start-->
+    <section id="subscribe" class="subscribe-box mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4 py-5">
+            <h2 class="font-play-bold">SUBSCRIBE <span class="color-primary-teal">NOW</span></h2>
+            <p class="mb-4">Signup for awesome news about our new products and
+              know our special discounts on products.</p>
+            <div class="input-group-custom">
+              <input type="text" class="form-control border-radius" placeholder="Enter email address" >
+              <button class="btn btn-prime border-radius text-white fw-bold" type="button" id="button-addon2">Subscribe</button>
+            </div>
+          </div>
+          
+          <div class="col-0 col-lg-2"></div>
+          <div class="col-0 col-lg-6">
+            <div class="subscribe-img"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Banner Subscribe end-->
+
+    <!-- Footer start-->
+    <footer class="footer">
+      <div class="container py-3">
+        <p class="text-white mb-0">© Copyright 2022 Kenkata</p>
+      </div>
+    </footer>
+    <!-- Footer end-->
+  </div>
+
+
+
+
+
+
+  <!-- <script src="script.js"></script> -->
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

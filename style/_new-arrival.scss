@@ -1,0 +1,49 @@
+.img-box-new-arrival {
+  // background-color: #ccc;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  .blue-box-new-arrival {
+    background-color: $background-dark;
+    height: 112%;
+    width: 100%;
+    position: absolute;
+    // bottom: 0;
+    bottom: -100%;
+    padding: 1rem 1.5rem;
+    transition: all 0.6s linear;
+    color: #fff !important;
+  }
+  .text-blue-box-top {
+    position: absolute;
+    top: 10px;
+  }
+  &:hover {
+    .blue-box-new-arrival {
+      bottom: 0;
+      background-color: $overlay;
+    }
+  }
+}
+
+.new-1 {
+  background-image: url(../images/new/bluesilk.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+.new-2 {
+  background-image: url(../images/new/menscoat.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+.new-3 {
+  background-image: url(../images/new/womanshirt.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}

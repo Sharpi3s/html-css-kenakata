@@ -1,0 +1,38 @@
+#hero-image {
+  background-image: url(../images/header/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+}
+#header {
+  a {
+    &:hover {
+      text-decoration: underline;
+      color: $background-dark;
+    }
+  }
+  .logo {
+    height: 1rem;
+  }
+}
+.icon-text {
+  font-size: 0.8rem;
+}
+@media (min-width: 1024px) {
+  #hero-image {
+    background-image: url(../images/header/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 60vh;
+  }
+  .icon-text {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 1690px) {
+  .icon-text {
+    font-size: 1rem;
+  }
+}

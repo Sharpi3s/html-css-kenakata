@@ -1,0 +1,36 @@
+#navigation {
+
+
+  .nav-link {
+    color: #FFFFFF !important;
+    i {
+      color: #FFFFFF !important;
+    }
+    &:hover {
+      color: $background-dark !important;
+      i {
+        color: $background-dark !important;
+      }
+    }
+  }
+  .icon-hover {
+    color: #FFF !important;
+    &:hover i {
+      // opacity: 0.6;
+      color: $background-dark !important;
+    }
+  }
+  // .fa-brands {
+  //   color: #FFF !important;
+  //   &:hover {
+  //     color: $background-dark !important;
+  //   }
+  // }
+  // .fa-solid {
+  //   color: #FFF !important;
+  //   &:hover {
+  //     color: $background-dark;
+  //   }
+  // }
+
+}

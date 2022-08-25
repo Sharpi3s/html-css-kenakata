@@ -1,0 +1,61 @@
+.new-7 {
+  background-image: url(../images/topseller/mensjeans.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 656px;
+}
+.img-box-top-seller-small {
+  // background-color: #ccc;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  .blue-box-top-seller {
+    background-color: $background-dark;
+    height: 120%;
+    width: 100%;
+    position: absolute;
+    // bottom: 0;
+    bottom: -105%;
+    padding: 1rem 1.5rem;
+    transition: all 0.6s linear;
+    color: #fff !important;
+  }
+  .text-blue-box-top {
+    position: absolute;
+    top: 10px;
+  }
+  &:hover {
+    .blue-box-top-seller {
+      bottom: 0;
+      background-color: $overlay;
+    }
+  }
+}
+.card-menu-top-seller-small {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: space-between;
+  height: 210px;
+  background-color: #fff;
+  padding: 1.4rem 0.6rem;
+  border-radius: 30px;
+  margin-top: 65px;
+  position: absolute;
+}
+
+.new-8 {
+  background-image: url(../images/topseller/bagandshoes.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 320px;
+}
+.new-9 {
+  background-image: url(../images/topseller/mensshoes.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 320px;
+}
