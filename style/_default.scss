@@ -88,6 +88,7 @@ hr {
 
 .btn-prime {
   background-color: $primary;
+  color: #fff;
   border: 1px solid transparent !important;
   &:hover {
     background-color: #fff;
@@ -97,13 +98,34 @@ hr {
       color: $primary !important;
     }
   }
+  &:focus[aria-expanded="true"] {
+    background-color: #fff;
+    color: $primary !important;
+    border: 1px solid $primary !important;
+    i {
+      color: $primary !important;
+    }
+  }
+  &:focus {
+    background-color: $primary;
+    color: #fff;
+    border: 1px solid transparent !important;
+    i {
+      color: #fff;
+    }
+  }
+  i {
+    color: #fff;
+  }
 }
+
 .btn-light-prime {
   background-color: #fff;
   &:hover {
     background-color: $primary;
     color: #fff !important;
   }
+
 }
 .btn-sm-font {
   font-size: 12px;

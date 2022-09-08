@@ -106,6 +106,7 @@ hr {
 
 .btn-prime {
   background-color: #20D3C2;
+  color: #fff;
   border: 1px solid transparent !important;
 }
 
@@ -117,6 +118,30 @@ hr {
 
 .btn-prime:hover i {
   color: #20D3C2 !important;
+}
+
+.btn-prime:focus[aria-expanded="true"] {
+  background-color: #fff;
+  color: #20D3C2 !important;
+  border: 1px solid #20D3C2 !important;
+}
+
+.btn-prime:focus[aria-expanded="true"] i {
+  color: #20D3C2 !important;
+}
+
+.btn-prime:focus {
+  background-color: #20D3C2;
+  color: #fff;
+  border: 1px solid transparent !important;
+}
+
+.btn-prime:focus i {
+  color: #fff;
+}
+
+.btn-prime i {
+  color: #fff;
 }
 
 .btn-light-prime {
@@ -165,6 +190,49 @@ hr {
   color: #0E153D !important;
 }
 
+.value .dropdown ul {
+  transform: translate(0px, 10px) !important;
+  border: none !important;
+  border-radius: 0;
+  background-color: #0E153D;
+}
+
+.value .dropdown ul li a {
+  color: #fff !important;
+  background-color: #0E153D;
+}
+
+.value .dropdown ul li a:hover {
+  background-color: #141e53;
+  filter: brightness(1);
+  color: #FFF !important;
+}
+
+.browse .dropdown ul {
+  transform: translate(0px, 42px) !important;
+  border: none !important;
+  border-radius: 0;
+  background-color: #0E153D;
+  width: 100%;
+}
+
+.browse .dropdown ul li a {
+  color: #fff;
+  background-color: #0E153D;
+}
+
+.browse .dropdown ul li a:hover {
+  background-color: #141e53;
+  filter: brightness(1);
+  color: #FFF !important;
+}
+
+@media (min-width: 1024px) {
+  .browse .dropdown ul {
+    transform: translate(0px, 46px) !important;
+  }
+}
+
 #hero-image {
   background-image: url(../images/header/header.jpg);
   background-repeat: no-repeat;
@@ -184,6 +252,11 @@ hr {
 
 .icon-text {
   font-size: 0.8rem;
+}
+
+.input-group input[type=text]:focus {
+  border-color: #20D3C2;
+  box-shadow: inset 3px 3px 5px 1px rgba(0, 0, 0, 0.08);
 }
 
 @media (min-width: 1024px) {
@@ -342,7 +415,7 @@ hr {
 .bg-teal-card {
   background-color: #20D3C214;
   border-radius: 8px;
-  padding: 1.5rem;
+  padding: 0.8rem;
   transition: all 0.6s linear;
 }
 
@@ -376,6 +449,24 @@ hr {
 
 .bg-teal-card:hover p {
   color: #fff;
+}
+
+@media (min-width: 1024px) {
+  .bg-teal-card {
+    background-color: #20D3C214;
+    border-radius: 8px;
+    padding: 1.1rem;
+    transition: all 0.6s linear;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-teal-card {
+    background-color: #20D3C214;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.6s linear;
+  }
 }
 
 .img-box-new-arrival {
@@ -778,6 +869,9 @@ hr {
     justify-content: center;
     align-items: center;
   }
+  .sale-box-root {
+    height: 250px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -847,6 +941,10 @@ hr {
 
 .bg-account a:hover {
   text-decoration: underline;
+}
+
+.form-text {
+  height: 20px !important;
 }
 
 .login {

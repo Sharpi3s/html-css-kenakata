@@ -1,7 +1,7 @@
 .bg-teal-card {
   background-color: $primary-bg;
   border-radius: 8px;
-  padding: 1.5rem;
+  padding: 0.8rem;
   transition: all 0.6s linear;
   .icon {
     height: 2.5rem;
@@ -29,5 +29,22 @@
     p {
       color: #fff;
     }
+  }
+}
+
+@media (min-width: 1024px) {
+  .bg-teal-card {
+    background-color: $primary-bg;
+    border-radius: 8px;
+    padding: 1.1rem;
+    transition: all 0.6s linear;
+  }
+}
+@media (min-width: 1200px) {
+  .bg-teal-card {
+    background-color: $primary-bg;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.6s linear;
   }
 }

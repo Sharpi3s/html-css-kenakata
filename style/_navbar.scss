@@ -20,17 +20,65 @@
       color: $background-dark !important;
     }
   }
-  // .fa-brands {
-  //   color: #FFF !important;
-  //   &:hover {
-  //     color: $background-dark !important;
-  //   }
-  // }
-  // .fa-solid {
-  //   color: #FFF !important;
-  //   &:hover {
-  //     color: $background-dark;
-  //   }
-  // }
+}
+.value {
+  .dropdown {
 
+    ul {
+      transform: translate(0px, 10px) !important;
+      border: none !important;
+      border-radius: 0;
+      background-color: $background-dark;
+      li {
+        a {
+          color: #fff !important;
+          background-color: $background-dark;
+          &:hover {
+            background-color: #141e53;
+            filter: brightness(1);
+            color: #FFF !important;
+          }
+        }
+  
+      }
+  
+    }
+  
+  }
+}
+.browse {
+  .dropdown {
+
+    ul {
+      transform: translate(0px, 42px) !important;
+      border: none !important;
+      border-radius: 0;
+      background-color: $background-dark;
+      width: 100%;
+      li {
+        a {
+          color: #fff;
+          background-color: $background-dark;
+          &:hover {
+            background-color: #141e53;
+            filter: brightness(1);
+            color: #FFF !important;
+          }
+        }
+  
+      }
+  
+    }
+  
+  }
+}
+@media (min-width: 1024px) {
+  .browse {
+    .dropdown {
+      ul {
+        transform: translate(0px, 46px) !important;
+      }
+    
+    }
+  }
 }
