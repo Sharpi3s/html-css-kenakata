@@ -20,10 +20,7 @@
 .icon-text {
   font-size: 0.8rem;
 }
-// .input-group input[type=text]:focus,
-// .input-group [type=text].form-control:focus {
-//   box-shadow: none;
-// }
+
 .input-group input[type=text]:focus{
   border-color: $primary;
   box-shadow: inset 3px 3px 5px 1px rgba(0,0,0,0.08) ;

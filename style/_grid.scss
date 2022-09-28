@@ -1,8 +1,6 @@
 
 .parent {
   display: grid;
-  // grid-template-columns: repeat(5, 1fr);
-  // grid-template-rows: repeat(3, 200px);
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 200px);
   grid-column-gap: 16px;
@@ -11,7 +9,6 @@
   
   .div1 { 
     grid-area: 1 / 1 / 2 / 3;
-    // grid-area: 1 / 1 / 2 / 2; 
     background-image: url(../images/grid/mensimg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -19,7 +16,6 @@
   }
   .div2 { 
     grid-area: 1 / 3 / 2 / 5; 
-    // grid-area: 1 / 2 / 2 / 4; 
     background-image: url(../images/grid/womensimg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -27,7 +23,6 @@
   }
   .div3 { 
     grid-area: 2 / 1 / 4 / 3;
-    // grid-area: 2 / 1 / 4 / 3; 
     background-image: url(../images/grid/shoes.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -35,7 +30,6 @@
   }
   .div4 { 
     grid-area: 2 / 3 / 3 / 5;
-    // grid-area: 2 / 3 / 3 / 4; 
     background-image: url(../images/grid/hats.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -43,7 +37,6 @@
   }
   .div5 { 
     grid-area: 3 / 3 / 4 / 5;
-    // grid-area: 3 / 3 / 4 / 5; 
     background-image: url(../images/grid/sunglasses.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -51,7 +44,6 @@
   }
   .div6 { 
     grid-area: 4 / 1 / 6 / 5;
-    // grid-area: 1 / 4 / 3 / 6; 
     background-image: url(../images/grid/kids.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -59,7 +51,6 @@
   }
   .div7 { 
     grid-area: 6 / 1 / 7 / 5;
-    // grid-area: 3 / 5 / 4 / 6; 
     background-image: url(../images/grid/watches.jpg);
     background-position: right;
     background-repeat: no-repeat;
@@ -108,8 +99,6 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 250px);
-    // grid-template-columns: repeat(5, 1fr);
-    // grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 16px;
     grid-row-gap: 16px;
     }
